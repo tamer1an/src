@@ -10,10 +10,8 @@ package main
 import "fmt"
 
 func main() {
-    var msg string
-    msg = "myMsg"
-
-    var a,b,c int
+    msg    := "myMsg"
+    a,b,c  := 1,false,3
 
     fmt.Println(msg,a,b,c)
 }
