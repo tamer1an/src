@@ -9,12 +9,25 @@ package main
 
 import "fmt"
 
+type Salutation struct {    // everything that is Uppercase is public and Lowercase is private
+    name string
+    greeting string
+}
+
 func main() {
-    msg    := "myMsg"
-    var greeting *string = &msg
+//    var s = Salutation{}
+//    s.name = "Bob"
+
+//    var s = Salutation{"Andrii","Hello!"}
+
+    var s = Salutation{greeting:"Andrii",name:"Hello!"}
+
+    fmt.Println(s.name,s.greeting)
+}
+
+
+//    msg    := "myMsg"
+//    var greeting *string = &msg
 
 //    a,b,c  := 1,false,3
 //    fmt.Println(msg,a,b,c)
-
-    fmt.Println(msg,*greeting)
-}
