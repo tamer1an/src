@@ -14,17 +14,37 @@ type Salutation struct {    // everything that is Uppercase is public and Lowerc
     greeting string
 }
 
+const (
+    PI = 3.14
+    Lang = "GO"
+    A = iota
+    B = iota
+    C = iota
+)
+
+const (
+    F = iota // auto increment depends of consand declared
+    G
+    H
+)
+
 func main() {
+
+
+    fmt.Println(PI,Lang,A,B,C)
+    fmt.Println(F,G,H)
+}
+
+////////////////////////////////
+
 //    var s = Salutation{}
 //    s.name = "Bob"
 
 //    var s = Salutation{"Andrii","Hello!"}
 
-    var s = Salutation{greeting:"Andrii",name:"Hello!"}
+//    var s = Salutation{greeting:"Andrii",name:"Hello!"}
 
-    fmt.Println(s.name,s.greeting)
-}
-
+////////////////////////////////
 
 //    msg    := "myMsg"
 //    var greeting *string = &msg
