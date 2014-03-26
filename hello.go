@@ -11,7 +11,10 @@ import "fmt"
 
 func main() {
     msg    := "myMsg"
-    a,b,c  := 1,false,3
+    var greeting *string = &msg
 
-    fmt.Println(msg,a,b,c)
+//    a,b,c  := 1,false,3
+//    fmt.Println(msg,a,b,c)
+
+    fmt.Println(msg,*greeting)
 }
